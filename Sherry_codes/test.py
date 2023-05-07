@@ -15,13 +15,14 @@ import pandas as pd
 import tiktoken
 import openai
 import numpy as np
+import huggingface_hub
 from openai.embeddings_utils import distances_from_embeddings, cosine_similarity
 
 # Regex pattern to match a URL
 HTTP_URL_PATTERN = r'^http[s]{0,1}://.+$'
 
 # Define root domain to crawl
-domain = "openai.com"
+domai = "openai.com"
 full_url = "https://openai.com/"
 
 # Create a class to parse the HTML and get the hyperlinks
