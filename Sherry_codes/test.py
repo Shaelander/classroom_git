@@ -2,6 +2,7 @@
 ### Step 1
 ################################################################################
 
+import sklearn
 import requests
 import re
 import urllib.request
